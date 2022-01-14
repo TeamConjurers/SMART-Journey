@@ -32,8 +32,10 @@ include('includes/config.php');
 <?php include('includes/header.php');?>
 
 <div class="banner">
-<video src="images/6.webm" muted loop autoplay></video> 
-
+	<div class="container">
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"><b>SMART Journey<b></h1>
+	</div>
+</div>
 
 <!--- rupes ---->
 <div class="container">
@@ -43,19 +45,19 @@ include('includes/config.php');
 				<a href="offers.html"><i class="fa fa-usd"></i></a>
 			</div>
 			<div class="rup-rgt">
-				<h3>UP TO USD. 50 OFF</h3>
-				<h4><a href="offers.html">TRAVEL SMART</a></h4>
+				<h3>50% OFF upto 50$: Christmas Offers</h3>
+				<h4><a href="https://www.expedia.com/lp/b/vacations/christmas-deals">Click to Acquire Your Package</a></h4>
 				
 			</div>
 				<div class="clearfix"></div>
 		</div>
 		<div class="col-md-4 rupes-left wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
 			<div class="rup-left">
-				<a href="offers.html"><i class="fa fa-h-square"></i></a>
+				<a href="https://www.amari.com/galle-srilanka/special-offers/hotel-packages?gclsrc=aw.ds&&gclid=Cj0KCQiAuP-OBhDqARIsAD4XHpegiArvwFVprFnPEOQndVvkRoE6tKjz1jbFNXp_fj9_57vzmJEPzQUaAgTeEALw_wcB"><i class="fa fa-h-square"></i></a>
 			</div>
 			<div class="rup-rgt">
-				<h3>UP TO 70% OFF</h3>
-				<h4><a href="offers.html">ON HOTELS ACROSS WORLD</a></h4>
+				<h3>Hotel Packages - Amari Galle</h3>
+				<h4><a href="offers.html">Click to Find Your Perfect Beach Getaway</a></h4>
 				
 			</div>
 				<div class="clearfix"></div>
@@ -65,8 +67,8 @@ include('includes/config.php');
 				<a href="offers.html"><i class="fa fa-mobile"></i></a>
 			</div>
 			<div class="rup-rgt">
-				<h3>FLAT USD. 50 OFF</h3>
-				<h4><a href="offers.html">US APP OFFER</a></h4>
+				<h3>Mobile Boarding Pass</h3>
+				<h4><a href="https://www.aa.com/i18n/travel-info/travel-tools/mobile-boarding-pass.jsp">Click to Save Time</a></h4>
 			
 			</div>
 				<div class="clearfix"></div>
@@ -77,21 +79,11 @@ include('includes/config.php');
 <!--- /rupes ---->
 <br>
 <br>
-<div class="top-header1">
-	<div class="container">
-		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
-			<br>
-		<h3><b>News Feed<b></h3>	
-		</ul>
-		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 
-			
-        </ul>
-		<div class="clearfix"></div>
-	</div>
+<h2 style="background-color:#D3D3D3; width:100%; height:50px; line-height:50px"><b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;News Feed<b></h2>	
 <div class="container">
 	<div class="holiday">
-				
-<?php $sql = "SELECT * from travelnews order by rand() limit 4";
+    
+<?php $sql = "SELECT * from travelnews order by rand() limit 1";
 $query = $dbh->prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -100,14 +92,21 @@ if($query->rowCount() > 0)
 {
 foreach($results as $result)
 {	?>
-			<div class="rom-btm">
-				<div class="col-md-6 room-midle wow fadeInUp animated" data-wow-delay=".5s">
-					<h4>Package Name: <?php echo htmlentities($result->NewsHeading);?></h4>
-					<p><b>Features</b> <?php echo htmlentities($result->NewsDescription);?></p>
-				</div>
-				<div class="clearfix"></div>
+			<form name="book" method="post">
+		<div class="selectroom_top">
+		<div class="col-md-4 selectroom_left wow fadeInLeft animated" data-wow-delay=".5s">
+				<img src="admin/pacakgeimages/<?php echo htmlentities($result->NewsImage);?>" class="img-responsive" alt="">
+		</div>
+			
+		<div class="col-md-8 selectroom_right wow fadeInRight animated" data-wow-delay=".5s">
+				<h2 style="color:#4609d6;"><b></b><?php echo htmlentities($result->NewsHeading);?></h2>
+						<div class="clearfix"></div>
 			</div>
-
+				<p style="padding-top: 1%; font-size:12px; color:#000000;"><?php echo htmlentities($result->NewsDescription);?> </p>	
+				<div class="clearfix"></div>
+		</div>
+	
+		</form>
 <?php }} ?>
 			
 </div>
@@ -116,35 +115,9 @@ foreach($results as $result)
 <!---holiday---->
 
 
-
-<Style>
-	.top-header1 {
-    background-color: #D3D3D3;
-    border-bottom: 0 none;
-	height: 70px;
-    line-height: 25px;
-    
-
-}
-</Style>
-
-<div class="top-header1">
-	<div class="container">
-		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
-			<br>
-			<h3><b>Most Popular Packages<b></h3>	
-		</ul>
-		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 
-			
-        </ul>
-		<div class="clearfix"></div>
-	</div>
-<br>
+<h2 style="background-color:#D3D3D3; width:100%; height:50px; line-height:50px"><b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Most Popular Packages<b></h2>	
 <div class="container">
-	<div class="holiday">
-	
-
-					
+	<div class="holiday">			
 <?php $sql = "SELECT * from tbltourpackages order by rand() limit 4";
 $query = $dbh->prepare($sql);
 $query->execute();
@@ -159,6 +132,7 @@ foreach($results as $result)
 					<img src="admin/pacakgeimages/<?php echo htmlentities($result->PackageImage);?>" class="img-responsive" alt="">
 					<h4><?php echo htmlentities($result->PackageName);?></h4>
 					<a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>" class="view">View</a>
+                    <br>
 				</div>
 			
 				
@@ -169,21 +143,9 @@ foreach($results as $result)
 </div>
 			<div class="clearfix"></div>
 	</div>
-
 <br>
 <br>
-
-	<div class="top-header1">
-	<div class="container">
-		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
-			<br>
-			<h3><b>Most Selled Items<b></h3>	
-		</ul>
-		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 
-			
-        </ul>
-		<div class="clearfix"></div>
-	</div>
+<h2 style="background-color:#D3D3D3; width:100%; height:50px; line-height:50px"><b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Most Trending Items<b></h2>	
 <div class="container">
 	<div class="holiday">
 
@@ -200,7 +162,8 @@ foreach($results as $result)
 				<div class="col-md-3 room-left wow fadeInLeft animated" data-wow-delay=".5s">
 					<img src="admin/pacakgeimages/<?php echo htmlentities($result->ProductImage);?>" class="img-responsive" alt="">
 					<h4><?php echo htmlentities($result->ProductName);?></h4>
-					<a href="product-details.php?pkgid=<?php echo htmlentities($result->ProductId);?>" class="view">View</a>
+					<a href="product-details.php?pkgid=<?php echo htmlentities($result->AddT01_id );?>" class="view">View</a>
+                    <br>
 				</div>
 			
 				
@@ -208,15 +171,15 @@ foreach($results as $result)
 			
 <?php }} ?>
 </body>
-						
+	<br>					
 		
 </div>
 			<div class="clearfix"></div>
 	</div>
 <body>
-	
+	<br>
+    <?php include('includes/footer.php');?>
 
-<?php include('includes/footer.php');?>
 <!-- signup -->
 <?php include('includes/signup.php');?>			
 <!-- //signu -->
