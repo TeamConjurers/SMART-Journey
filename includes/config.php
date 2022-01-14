@@ -1,9 +1,9 @@
 <?php 
 // DB credentials.
-define('DB_HOST','localhost:8080');
-define('DB_USER','root');
-define('DB_PASS','');
-define('DB_NAME','tms');
+define('DB_HOST','remotemysql.com');
+define('DB_USER','8CIcE1JU9U');
+define('DB_PASS','iM3TJxZKfY');
+define('DB_NAME','8CIcE1JU9U');
 // Establish database connection.
 try
 {
