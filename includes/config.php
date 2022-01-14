@@ -1,9 +1,9 @@
 <?php 
 // DB credentials.
-define('DB_HOST','remotemysql.com');
-define('DB_USER','8CIcE1JU9U');
-define('DB_PASS','iM3TJxZKfY');
-define('DB_NAME','8CIcE1JU9U');
+define('DB_HOST','db4free.net');
+define('DB_USER','teamconjurers');
+define('DB_PASS','teamconjurers123');
+define('DB_NAME','smartjourneydb');
 // Establish database connection.
 try
 {
