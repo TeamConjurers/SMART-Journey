@@ -7,7 +7,7 @@ if(strlen($_SESSION['login'])==0){
 } else{
   if(isset($_POST['deleteRec'])){
     $bookID = $_POST['bookid'];
-    $query = "DELETE FROM "; //Delete record here
+    $query = "DELETE FROM tblpurchases WHERE BookingId=bookid"; //Delete record here
   }
 if(isset($_REQUEST['bkid']))
 	{
