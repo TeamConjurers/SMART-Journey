@@ -2,11 +2,13 @@
 session_start();
 error_reporting(0);
 include('includes/config.php');
-if(strlen($_SESSION['login'])==0)
-	{	
-header('location:index1.php');
-}
-else{
+if(strlen($_SESSION['login'])==0){	
+  header('location:index1.php');
+} else{
+  if(isset($_POST['deleteRec'])){
+    $bookID = $_POST['bookid'];
+    $query = "DELETE FROM "; //Delete record here
+  }
 if(isset($_REQUEST['bkid']))
 	{
 		$bid=intval($_GET['bkid']);
@@ -187,6 +189,12 @@ foreach($results as $result)
 <td><?php echo htmlentities($result->comment);?></td>
 
 <td><?php echo htmlentities($result->regdate);?></td>
+<td>
+<form action="mycart01.php" method="post">
+<input type="hidden" name="bookid" value="<?php echo htmlentities($result->bookid);?>">
+<input type="submit" name="deleteRec" value="Delete">
+</form>	
+</td>
 
 
 <?php $cnt=$cnt+1; }} ?>
