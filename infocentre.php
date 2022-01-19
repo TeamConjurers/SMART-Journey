@@ -101,7 +101,7 @@ foreach($results as $result)
 <!--- Map ---->
 
 	
-<?php include('includes/Index1.html');?>
+<?php include('includes/Index.html');?>
 
 
 		<!--- Map---->	
