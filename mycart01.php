@@ -164,6 +164,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <th style= "text-align:center;"><h4><b>Product Name<b></h4></th>
 <th style= "text-align:center;"><h4><b>Comment<b></h4></th>
 <th style= "text-align:center;"><h4><b>Date<b></h4></th>
+<th style= "text-align:center;"><h4><b>Delete<b></h4></th>
 
 </tr>
 <?php 
