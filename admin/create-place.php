@@ -90,23 +90,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  
 <!---->
   <div class="grid-form1">
-  	       <h3>Create Package</h3>
+  	       <h3>Create Place</h3>
   	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
   	         <div class="tab-content">
 						<div class="tab-pane active" id="horizontal-form">
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
 								<div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Name</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Place Name</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="place" id="place" placeholder="Create Package" required>
+										<input type="text" class="form-control1" name="place" id="place" placeholder="Enter the place name" required>
 									</div>
 								</div>
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Location</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Place Location</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="location" id="location" placeholder=" Package Location" required>
+										<input type="text" class="form-control1" name="location" id="location" placeholder="Enter the Location" required>
 									</div>
 								</div>
 
