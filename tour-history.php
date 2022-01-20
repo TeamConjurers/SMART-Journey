@@ -121,7 +121,7 @@ $error="You can't cancel booking before 24 hours";
 <th style= "text-align:center;"><h4><b>From<b></h4></th>
 <th style= "text-align:center;"><h4><b>To<b></h4></th>
 <th style= "text-align:center;"><h4><b>Description<b></h4></th>
-<th style= "text-align:center;"><h4><b>Date<b></h4></th>
+
 
 </tr>
 <?php 
@@ -144,7 +144,7 @@ foreach($results as $result)
 <td><?php echo htmlentities($result->todate);?></td>
 <td><?php echo htmlentities($result->comment);?></td>
 
-<td><?php echo htmlentities($result->regdate);?></td>
+
 
 </tr>
 <?php $cnt=$cnt+1; }} ?>
