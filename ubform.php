@@ -2,11 +2,7 @@
 session_start();
 error_reporting(0);
 include('includes/config.php');
-if(strlen($_SESSION['alogin'])==0)
-	{	
-header('location:admin/index.php');
-}
-else{
+
 if(isset($_POST['submit']))
 {
 $ubname=$_POST['ubname'];	
@@ -172,4 +168,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <!--//content-inner-->
 		<!--/sidebar-menu-->
 					
-<?php } ?>
+<?php?>
