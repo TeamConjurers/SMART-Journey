@@ -17,7 +17,7 @@ $pprice=$_POST['productprice'];
 $pfeatures=$_POST['productfeatures'];
 $pdetails=$_POST['productdetails'];	
 $pimage=$_FILES["productimage"]["name"];
-$sql="update TblMarketPlace04 set ProductName=:pname,ProductType=:ptype,SellerDetails=:plocation,ProductPrice=:pprice,ProductFeatures=:pfeatures,ProductDetails=:pdetails where AddT04_id=:pid";
+$sql="update tblmarketplace04 set ProductName=:pname,ProductType=:ptype,SellerDetails=:plocation,ProductPrice=:pprice,ProductFeatures=:pfeatures,ProductDetails=:pdetails where AddT04_id=:pid";
 $query = $dbh->prepare($sql);
 $query->bindParam(':pname',$pname,PDO::PARAM_STR);
 $query->bindParam(':ptype',$ptype,PDO::PARAM_STR);
