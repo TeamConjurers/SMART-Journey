@@ -17,7 +17,7 @@ $pprice=$_POST['productprice'];
 $pfeatures=$_POST['productfeatures'];
 $pdetails=$_POST['productdetails'];	
 $pimage=$_FILES["productimage"]["name"];
-$sql="update TblMarketPlace02 set ProductName=:pname,ProductType=:ptype,SellerDetails=:plocation,ProductPrice=:pprice,ProductFeatures=:pfeatures,ProductDetails=:pdetails where AddT02_id=:pid";
+$sql="update tblmarketplace02 set ProductName=:pname,ProductType=:ptype,SellerDetails=:plocation,ProductPrice=:pprice,ProductFeatures=:pfeatures,ProductDetails=:pdetails where AddT02_id=:pid";
 $query = $dbh->prepare($sql);
 $query->bindParam(':pname',$pname,PDO::PARAM_STR);
 $query->bindParam(':ptype',$ptype,PDO::PARAM_STR);
@@ -95,7 +95,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 <?php 
 $pid=intval($_GET['pid']);
-$sql = "SELECT * from TblMarketPlace02 where AddT02_id=:pid";
+$sql = "SELECT * from tblmarketplace02 where AddT02_id=:pid";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':pid', $pid, PDO::PARAM_STR);
 $query->execute();
