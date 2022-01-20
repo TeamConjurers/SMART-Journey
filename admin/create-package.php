@@ -45,7 +45,7 @@ $error="Something went wrong. Please try again";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Create Package</title>
+<title>Admin:Create Package</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -107,34 +107,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Name</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Create Package" required>
+										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Enter the name of the package" required>
 									</div>
 								</div>
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Type</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Package Type (Family,General,Friends,Religious,etc)</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder=" Package Type eg- Family Package / Couple Package" required>
+										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder="Enter the type of the package" required>
 									</div>
 								</div>
 
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Location</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder=" Package Location" required>
+										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder="Enter the location" required>
 									</div>
 								</div>
 
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Price in LKR</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Package Price is USD" required>
+										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder="Enter the Package Price is LKR" required>
 									</div>
 								</div>
 
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Features</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Package Features Eg-free Pickup-drop facility" required>
+										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Enter the Package Features" required>
 									</div>
 								</div>		
 
@@ -142,17 +142,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Details</label>
 									<div class="col-sm-8">
-										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Package Details" required></textarea> 
+										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Enter Package Details" required></textarea> 
 									</div>
 								</div>		
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Contact Number</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagecontact" id="packagecontact" placeholder="Contact Number" required>
+										<input type="text" class="form-control1" name="packagecontact" id="packagecontact" placeholder="Add a Contact Number" required>
 									</div>
 								</div>											
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Image</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Add Image</label>
 									<div class="col-sm-8">
 										<input type="file" name="packageimage" id="packageimage" required>
 									</div>
