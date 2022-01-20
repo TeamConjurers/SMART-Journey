@@ -30,12 +30,17 @@ include('includes/config.php');
 <body>
 <?php include('includes/header.php');?>
 
+<div class="banner-3">
+	<div class="container">
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"><b>Information Center<b></h1>
+	</div>
+</div>
 <!--- rooms ---->
 <div class="rooms">
 	<div class="container">
 		
 		<div class="room-bottom">
-			<h3 style="padding: 10px; border: 5px solid grey;font-size: 30px; width:315px; background-color: solid grey;"><b>Information Centre</b></h3>
+			
 
 
 <br></br>
@@ -112,7 +117,7 @@ foreach($results as $result)
 <?php include('includes/signin.php');?>			
 <!-- //signin -->
 <!-- write us -->
-<?php include('includes/write-us.php');?>			
-<!-- //write us -->
+<?php include('includes/write-us.php');?>
+<?php include('includes/footer.php');?>		
 </body>
 </html>
