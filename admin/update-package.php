@@ -82,7 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 <!--heder end here-->
 	<ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Update Tour Package </li>
+                <li class="breadcrumb-item"><a href="index.php">Home</a><i class="fa fa-angle-right"></i>Update Tour Package </li>
             </ol>
 		<!--grid-->
  	<div class="grid-form">
@@ -153,7 +153,7 @@ foreach($results as $result)
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Contact Number</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagecontact" id="packagecontact" placeholder="Contact Number" required>
+										<input type="text" class="form-control1" name="packagecontact" id="packagecontact" placeholder="Contact Number" value="<?php echo htmlentities($result->PackageContact);?>" required>
 									</div>
 								</div>																
 <div class="form-group">
