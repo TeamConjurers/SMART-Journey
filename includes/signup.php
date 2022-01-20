@@ -60,7 +60,7 @@ error:function (){}
 													<h3>Sign Up with</h3>
 													<h3><b>SMART Journey<b></h3>
 													<h3>for free</h3>
-													
+													<p>By connecting with SMART Journey you can get these <a href="ourservices.php">Services</a></p>
 												</ul>
 											</div>
 											<div class="login-right">
