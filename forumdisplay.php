@@ -68,18 +68,32 @@ include('includes/config.php');
 		</style>
 </head> 
 <body>
-   <div class="page-container">
+ 
    <!--/content-inner-->
    
 <!--heder end here-->
-<ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index1.php">Home</a><i class="fa fa-angle-right"><a href="forumdisplay.php"></i>Forum</li>
-				
-                
-            </ol>
+<?php include('includes/header.php');?>
+<div class="banner-3">
+	<div class="container">
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"><b>Forum<b></h1>
+	</div>
 
-			<div class="banner-3">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href="css/font-awesome.css" rel="stylesheet">
+<!-- Custom Theme files -->
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+<link rel="stylesheet" href="css/jquery-ui.css" />
 	
 <div class="agile-grids">	
 
@@ -87,8 +101,6 @@ include('includes/config.php');
 			
 				<div class="agile-tables">
 					<div class="w3l-table-info">
-					<h2 style="background-color:#D3D3D3; color:#000000;width:100%; height:50px; line-height:50px"><b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;FORUM<b></h2>	
-
 					<button><a href="enquiry.php"><b>Add to Forum<b></a></button><br></br>
 					 
 					    <table id="table">
