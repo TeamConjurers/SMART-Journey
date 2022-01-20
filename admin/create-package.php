@@ -111,9 +111,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</div>
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Type (Family,General,Friends,Religious,etc)</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Package Type</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder="Enter the type of the package" required>
+										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder="Enter the type of the package(Family,General,Friends,Religious,etc)" required>
 									</div>
 								</div>
 
