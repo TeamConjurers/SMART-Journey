@@ -13,7 +13,7 @@ if(isset($_POST['submit']))
 
 $pimage=$_FILES["productimage"]["name"];
 move_uploaded_file($_FILES["productimage"]["tmp_name"],"pacakgeimages/".$_FILES["productimage"]["name"]);
-$sql="update TblMarketPlace02 set ProductImage=:pimage where AddT02_id=:imgid";
+$sql="update tblmarketplace02 set ProductImage=:pimage where AddT02_id=:imgid";
 $query = $dbh->prepare($sql);
 
 $query->bindParam(':imgid',$imgid,PDO::PARAM_STR);
@@ -90,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
 						<?php 
 $imgid=intval($_GET['imgid']);
-$sql = "SELECT ProductImage from TblMarketPlace02 where AddT02_id=:imgid";
+$sql = "SELECT ProductImage from tblmaeketplace02 where AddT02_id=:imgid";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':imgid', $imgid, PDO::PARAM_STR);
 $query->execute();
