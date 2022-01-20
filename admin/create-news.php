@@ -99,14 +99,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">News Writer</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="newsname" id="newsname" placeholder="Create Package" required>
+										<input type="text" class="form-control1" name="newsname" id="newsname" placeholder="Enter the news writer" required>
 									</div>
 								</div>
 
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">News Heading</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="newsheading" id="newheading" placeholder="Package Features Eg-free Pickup-drop facility" required>
+										<input type="text" class="form-control1" name="newsheading" id="newheading" placeholder="Enter the news heading" required>
 									</div>
 								</div>		
 
@@ -114,11 +114,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Description</label>
 									<div class="col-sm-8">
-										<textarea class="form-control" rows="5" cols="50" name="newsdescription" id="newsdescription" placeholder="Package Details" required></textarea> 
+										<textarea class="form-control" rows="5" cols="50" name="newsdescription" id="newsdescription" placeholder="Add a description about the news" required></textarea> 
 									</div>
 								</div>											
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Image</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Add Image</label>
 									<div class="col-sm-8">
 										<input type="file" name="newsimage" id="newsimage" required>
 									</div>
