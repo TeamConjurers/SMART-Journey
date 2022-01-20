@@ -5,19 +5,18 @@
 <!--- /footer-top ---->
 <!---copy-right ---->
 <div class="copy-right">
-<div class="container">
 	
-		<div class="" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
+	<div class="container">
+
+	<div class="" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
 			<ul>
-			<li><a href="aboutus.php"><p><b>&nbsp;About Us<b></p></a></li>
-	<li><a href="ourservices.php"><p><b>&nbsp;Our Services<b></p></a></li>
-	<li><a href="#" data-toggle="modal" data-target="#myModal3"><p>&nbsp;Any Enquiry?</p></a>  </li>
+			<li><a href="aboutus.php"><p><b>About Us<b></p></a></li>
+	<li><a href="page.php?type=Our Services"><p><b>Our Services<b></p></a></li>
+	<li><a href="#" data-toggle="modal" data-target="#myModal3"><p>Any Enquiry?</p></a>  </li>
 			
 
 			</ul>
 		</div>
-	
-	<div class="container">
 
 		<div class="footer-social-icons wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
 			<ul>
