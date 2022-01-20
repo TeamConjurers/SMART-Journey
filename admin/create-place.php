@@ -37,7 +37,7 @@ $error="Something went wrong. Please try again";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Create Place</title>
+<title>Admin:Create Place</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -111,14 +111,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Features</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Description</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="description" id="description" placeholder="Package Features Eg-free Pickup-drop facility" required>
+										<input type="text" class="form-control1" name="description" id="description" placeholder="Enter a description" required>
 									</div>
 								</div>		
 							
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Image</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Add Image</label>
 									<div class="col-sm-8">
 										<input type="file" name="image" id="image" required>
 									</div>
