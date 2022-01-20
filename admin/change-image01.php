@@ -90,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
 						<?php 
 $imgid=intval($_GET['imgid']);
-$sql = "SELECT ProductImage from TblMarketPlace where AddT01_id=:imgid";
+$sql = "SELECT ProductImage from tblmarketplace where AddT01_id=:imgid";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':imgid', $imgid, PDO::PARAM_STR);
 $query->execute();
