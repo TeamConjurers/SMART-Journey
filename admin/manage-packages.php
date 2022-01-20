@@ -90,6 +90,7 @@ else{
 							<th>Type</th>
 							<th>Location</th>
 							<th>Price</th>
+							 <th>Contact No.</th>
 							<th>Creation Date</th>
 							<th>Action</th>
 						  </tr>
