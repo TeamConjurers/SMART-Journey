@@ -91,22 +91,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="tab-pane active" id="horizontal-form">
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
 								<div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Name</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Name</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="ubname" id="ubname" placeholder="Create Package" required>
+										<input type="text" class="form-control1" name="ubname" id="ubname" placeholder="Enter Your Name" required>
 									</div>
 								</div>
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Type</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Heading</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="ubheading" id="ubheading" placeholder=" Package Type eg- Family Package / Couple Package" required>
+										<input type="text" class="form-control1" name="ubheading" id="ubheading" placeholder="Enter the heading" required>
 									</div>
 								</div>
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Location</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Description</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="ubdescription" id="ubdescription" placeholder=" Package Location" required>
+										<input type="text" class="form-control1" name="ubdescription" id="ubdescription" placeholder="Describe" required>
 									</div>
 								</div>									
 <div class="form-group">
