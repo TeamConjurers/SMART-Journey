@@ -4,7 +4,7 @@ error_reporting(0);
 include('includes/config.php');
 if(strlen($_SESSION['alogin'])==0)
 	{	
-header('location:index.php');
+header('location:admin/index.php');
 }
 else{
 if(isset($_POST['submit']))
@@ -38,38 +38,6 @@ $error="Something went wrong. Please try again";
 <html>
 <head>
 <title>FeedBack Form</title>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link href="css/font-awesome.css" rel="stylesheet">
-<!-- Custom Theme files -->
-<script src="js/jquery-1.12.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<!--animate-->
-<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-<script src="js/wow.min.js"></script>
-<link rel="stylesheet" href="css/jquery-ui.css" />
-	<script>
-		 new WOW().init();
-	</script>
-<script src="js/jquery-ui.js"></script>
-					<script>
-						$(function() {
-						$( "#datepicker,#datepicker1" ).datepicker();
-						});
-					</script>
-	  <style>
-	
-	
-	
-	
-	
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -116,7 +84,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  
 <!---->
   <div class="grid-form1">
-  	       <h3>Create Package</h3>
+  	       <h3>Add Your Feedback</h3>
   	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
   	         <div class="tab-content">
@@ -125,7 +93,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Name</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="ubname" id="ubname" placeholder="Enter Your Name" required>
+										<input type="text" class="form-control1" name="ubname" id="ubname" placeholder="Enter your name" required>
 									</div>
 								</div>
 <div class="form-group">
@@ -142,7 +110,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</div>									
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Image</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Add Image</label>
 									<div class="col-sm-8">
 										<input type="file" name="ubimage" id="ubimage" required>
 									</div>
