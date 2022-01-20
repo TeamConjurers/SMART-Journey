@@ -36,7 +36,7 @@ $msg="Package Updated Successfully";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Admin Package Creation</title>
+<title>Manage Packages</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -112,40 +112,40 @@ foreach($results as $result)
 								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Name</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Create Package" value="<?php echo htmlentities($result->PackageName);?>" required>
+										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Enter the packages name" value="<?php echo htmlentities($result->PackageName);?>" required>
 									</div>
 								</div>
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Type</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder=" Package Type eg- Family Package / Couple Package" value="<?php echo htmlentities($result->PackageType);?>" required>
+										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder="Enter the type of the package" value="<?php echo htmlentities($result->PackageType);?>" required>
 									</div>
 								</div>
 
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Location</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder=" Package Location" value="<?php echo htmlentities($result->PackageLocation);?>" required>
+										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder="Enter the Location" value="<?php echo htmlentities($result->PackageLocation);?>" required>
 									</div>
 								</div>
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Price in USD</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Package Price in LKR</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Package Price is USD" value="<?php echo htmlentities($result->PackagePrice);?>" required>
+										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Package Price is LKR" value="<?php echo htmlentities($result->PackagePrice);?>" required>
 									</div>
 								</div>
 
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Features</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Package Features Eg-free Pickup-drop facility" value="<?php echo htmlentities($result->PackageFetures);?>" required>
+										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Features of the package" value="<?php echo htmlentities($result->PackageFetures);?>" required>
 									</div>
 								</div>	
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Features</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Contact Number</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagecontact" id="packagecontact" placeholder="Package Features Eg-free Pickup-drop facility" value="<?php echo htmlentities($result->PackageContact);?>" required>
+										<input type="text" class="form-control1" name="packagecontact" id="packagecontact" placeholder="Enter the contact number" value="<?php echo htmlentities($result->PackageContact);?>" required>
 									</div>
 								</div>		
 
@@ -153,7 +153,7 @@ foreach($results as $result)
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Details</label>
 									<div class="col-sm-8">
-										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Package Details" required><?php echo htmlentities($result->PackageDetails);?></textarea> 
+										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Enter the details of the package" required><?php echo htmlentities($result->PackageDetails);?></textarea> 
 									</div>
 								</div>															
 <div class="form-group">
