@@ -15,9 +15,10 @@ $ptype=$_POST['packagetype'];
 $plocation=$_POST['packagelocation'];
 $pprice=$_POST['packageprice'];	
 $pfeatures=$_POST['packagefeatures'];
-$pdetails=$_POST['packagedetails'];	
+$pdetails=$_POST['packagedetails'];
+$pcontact=$_POST['packagecontact'];
 $pimage=$_FILES["packageimage"]["name"];
-$sql="update tbltourpackages set PackageName=:pname,PackageType=:ptype,PackageLocation=:plocation,PackagePrice=:pprice,PackageFetures=:pfeatures,PackageDetails=:pdetails where PackageId=:pid";
+$sql="update tbltourpackages set PackageName=:pname,PackageType=:ptype,PackageLocation=:plocation,PackagePrice=:pprice,PackageFetures=:pfeatures,PackageDetails=:pdetails,PackageContact=:pcontact where PackageId=:pid";
 $query = $dbh->prepare($sql);
 $query->bindParam(':pname',$pname,PDO::PARAM_STR);
 $query->bindParam(':ptype',$ptype,PDO::PARAM_STR);
@@ -25,6 +26,7 @@ $query->bindParam(':plocation',$plocation,PDO::PARAM_STR);
 $query->bindParam(':pprice',$pprice,PDO::PARAM_STR);
 $query->bindParam(':pfeatures',$pfeatures,PDO::PARAM_STR);
 $query->bindParam(':pdetails',$pdetails,PDO::PARAM_STR);
+$query->bindParam(':pcontact',$pcontact,PDO::PARAM_STR);
 $query->bindParam(':pid',$pid,PDO::PARAM_STR);
 $query->execute();
 $msg="Package Updated Successfully";
@@ -138,6 +140,12 @@ foreach($results as $result)
 									<label for="focusedinput" class="col-sm-2 control-label">Package Features</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Package Features Eg-free Pickup-drop facility" value="<?php echo htmlentities($result->PackageFetures);?>" required>
+									</div>
+								</div>	
+<div class="form-group">
+									<label for="focusedinput" class="col-sm-2 control-label">Package Features</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packagecontact" id="packagecontact" placeholder="Package Features Eg-free Pickup-drop facility" value="<?php echo htmlentities($result->PackageContact);?>" required>
 									</div>
 								</div>		
 
