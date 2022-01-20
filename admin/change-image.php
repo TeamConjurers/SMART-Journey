@@ -13,7 +13,7 @@ if(isset($_POST['submit']))
 
 $pimage=$_FILES["packageimage"]["name"];
 move_uploaded_file($_FILES["packageimage"]["tmp_name"],"pacakgeimages/".$_FILES["packageimage"]["name"]);
-$sql="update TblTourPackages set PackageImage=:pimage where PackageId=:imgid";
+$sql="update tbltourpackages set PackageImage=:pimage where PackageId=:imgid";
 $query = $dbh->prepare($sql);
 
 $query->bindParam(':imgid',$imgid,PDO::PARAM_STR);
@@ -29,7 +29,7 @@ $msg="Package Created Successfully";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Admin Package Creation</title>
+<title>Mange Package</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -90,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
 						<?php 
 $imgid=intval($_GET['imgid']);
-$sql = "SELECT PackageImage from TblTourPackages where PackageId=:imgid";
+$sql = "SELECT PackageImage from tbltourpackages where PackageId=:imgid";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':imgid', $imgid, PDO::PARAM_STR);
 $query->execute();
