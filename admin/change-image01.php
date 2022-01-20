@@ -13,7 +13,7 @@ if(isset($_POST['submit']))
 
 $pimage=$_FILES["productimage"]["name"];
 move_uploaded_file($_FILES["productimage"]["tmp_name"],"pacakgeimages/".$_FILES["productimage"]["name"]);
-$sql="update TblMarketPlace set ProductImage=:pimage where AddT01_id=:imgid";
+$sql="update tblmarketplace set ProductImage=:pimage where AddT01_id=:imgid";
 $query = $dbh->prepare($sql);
 
 $query->bindParam(':imgid',$imgid,PDO::PARAM_STR);
