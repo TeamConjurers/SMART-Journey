@@ -9,8 +9,8 @@
 	
 		<div class="" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
 			<ul>
-			<li><a href="page.php?type=About Us"><p><b>About Us<b></p></a></li>
-	<li><a href="page.php?type=Our Services"><p><b>Our Services<b></p></a></li>
+			<li><a href="aboutus.php"><p><b>About Us<b></p></a></li>
+	<li><a href="ourservices.php"><p><b>Our Services<b></p></a></li>
 	<li><a href="#" data-toggle="modal" data-target="#myModal3"><p>Any Enquiry?</p></a>  </li>
 			
 
