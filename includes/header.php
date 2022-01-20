@@ -91,11 +91,11 @@
 								
 {?>								<li><a href="infocentre.php"><b>Info Centre<b></a></li>
 								<li><a href="travelpackages.php"><b>Travel Planner<b></a></li>
-								<li><a href="user-blog.php">User's Blog </a>  </li>
+								<li><a href="user-blog.php"><b>User's Blog<b></a></li>
 								<li><a href="tour-history.php"><b>Travel Diary<b></a></li>
 								<?php } else { ?>
 									<li><a href="infocentrewithoutmap.php"><b>Info Centre<b></a></li>
-									<li><a href="user-blogview.php">User's Blog </a>  </li>
+									<li><a href="user-blogview.php"><b>User's Blog<b></a></li>
 								<li><a href="pricing.php"><b>Pricing<b> </a></li>
 								
 
