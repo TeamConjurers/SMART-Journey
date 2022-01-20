@@ -95,7 +95,7 @@ else{
 						  </tr>
 						</thead>
 						<tbody>
-<?php $sql = "SELECT * from TblTourPackages";
+<?php $sql = "SELECT * from tbltourpackages";
 $query = $dbh -> prepare($sql);
 //$query -> bindParam(':city', $city, PDO::PARAM_STR);
 $query->execute();
