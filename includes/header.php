@@ -57,7 +57,7 @@
 				<li class="hm"><a href="index.html"><i class="fa fa-sign-in"></i></a></li>
 				<li class="sigi"><a href="#" data-toggle="modal" data-target="#myModal4" ><b><p></p>Sign In<b> / </a></li>
 				
-				<li class="sig"><a href="#" data-toggle="modal" data-target="#myModal" ><b>Register for free<b></a></li> 
+				<li class="sig"><a href="#" data-toggle="modal" data-target="#myModal" ><b>Register<b></a></li> 
 			
 			<div class="clearfix"></div>
 			<?php } ?>
