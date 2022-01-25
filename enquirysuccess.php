@@ -35,7 +35,7 @@ include('includes/config.php');
 <div class="contact">
 	<div class="container">
 	<h3> Confirmation</h3>
-	<h4>&emsp;Your Enquiry has been succesfuly submitted</h4>
+	<h4>&emsp;Your Attempt is successful</h4>
 	
 		<div class="col-md-10 contact-left">
 			<div class="con-top animated wow fadeInUp animated" data-wow-duration="1200ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 1200ms; animation-delay: 500ms; animation-name: fadeInUp;">
