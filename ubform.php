@@ -73,7 +73,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!--heder end here-->
 	<ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="user-blog.php">Home</a><i class="fa fa-angle-right"></i>Update Package </li>
+                <li class="breadcrumb-item"><a href="user-blog.php">Home</a><i class="fa fa-angle-right"></i>Upload to User's Blog</li>
             </ol>
 		<!--grid-->
  	<div class="grid-form">
