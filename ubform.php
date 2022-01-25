@@ -20,7 +20,7 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$msg="Package Created Successfully";
+$msg="Travellogue Created Successfully";
 }
 else 
 {
