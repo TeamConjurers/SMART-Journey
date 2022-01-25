@@ -15,12 +15,12 @@ $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
 $_SESSION['msg']="Info successfully submited ";
-echo "<script type='text/javascript'> document.location = 'thankyou.php'; </script>";
+echo "<script type='text/javascript'> document.location = 'enquirysuccess.php'; </script>";
 }
 else 
 {
 $_SESSION['msg']="Something went wrong. Please try again.";
-echo "<script type='text/javascript'> document.location = 'thankyou.php'; </script>";
+echo "<script type='text/javascript'> document.location = 'enquirysuccess.php'; </script>";
 }
 }
 ?>	
