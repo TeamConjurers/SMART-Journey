@@ -27,7 +27,7 @@ $query->bindParam(':pfeatures',$pfeatures,PDO::PARAM_STR);
 $query->bindParam(':pdetails',$pdetails,PDO::PARAM_STR);
 $query->bindParam(':pid',$pid,PDO::PARAM_STR);
 $query->execute();
-$msg="Added to Market Place successfully";
+$msg="Updated to Market Place successfully";
 }
 
 	?>
