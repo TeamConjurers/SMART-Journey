@@ -22,7 +22,7 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$msg="Purchase Request Placed Successfully";
+$msg="Done";
 }
 else 
 {
