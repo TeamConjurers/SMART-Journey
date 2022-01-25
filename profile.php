@@ -105,16 +105,7 @@ foreach($results as $result)
 <p style="width: 350px;">
 <b>Email Id</b>
 	<input type="email" class="form-control" name="email" value="<?php echo htmlentities($result->EmailId);?>" id="email" readonly>
-			</p>
-<p style="width: 350px;">
-<b>Last Updation Date : </b>
-<?php echo htmlentities($result->UpdationDate);?>
-</p>
 
-<p style="width: 350px;">	
-<b>Reg Date :</b>
-<?php echo htmlentities($result->RegDate);?>
-			</p>
 <?php }} ?>
 
 			<p style="width: 350px;">
