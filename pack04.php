@@ -74,7 +74,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	</div>
 </div>
 <div class="navbar01">
-  <a href="pack01.php">Traveling Equipmets</a> 
+  <a href="pack01.php">Traveling Equipments</a> 
   <a href="pack02.php">Transportation Services</a> 
   <a href="pack03.php">Accommodation</a> 
   <a href="pack04.php">Clothing</a>
