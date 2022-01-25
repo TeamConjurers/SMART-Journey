@@ -143,7 +143,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	</div>
 </div>
 <div class="navbar01">
-  <a href="mycart01.php">Traveling Equipmets</a> 
+  <a href="mycart01.php">Traveling Equipments</a> 
   <a href="mycart02.php">Transportation Services</a> 
   <a href="mycart03.php">Accommodation</a> 
   <a href="mycart04.php">Clothing</a>
