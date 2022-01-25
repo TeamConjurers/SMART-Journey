@@ -111,7 +111,7 @@ return true;
 
 <p style="width: 350px;">
 <b>Confirm Password</b>
-	<input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Confrim Password" required="">
+	<input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" required="">
 			</p>
 
 			<p style="width: 350px;">
