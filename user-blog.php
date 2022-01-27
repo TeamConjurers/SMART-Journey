@@ -41,7 +41,7 @@ include('includes/config.php');
 	<div class="container">
 		
 		<div class="room-bottom">
-			<h3>Explore the Blog of Users...</h3>
+			<h3>Explore the Blog of Users</h3>
             <div class="nav-right flex-div">
                 <br></br>
                 <a href="ubform.php"><button class="button"><b>Upload to the Blog<b></button></a>
